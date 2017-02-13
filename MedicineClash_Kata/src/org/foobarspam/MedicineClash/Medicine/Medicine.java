@@ -2,7 +2,7 @@ package org.foobarspam.MedicineClash.Medicine;
 
 import java.util.ArrayList;
 import java.util.Collection;
-
+import org.foobarspam.MedicineClash.Prescription.*;
 public class Medicine {
     
     private Collection<Prescription> prescriptions = new ArrayList<Prescription>();

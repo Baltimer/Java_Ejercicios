@@ -10,5 +10,4 @@ public class Prescription {
         this.dispenseDate = dispenseDate;
         this.daysSupply = daysSupply;
     }
-
 }
