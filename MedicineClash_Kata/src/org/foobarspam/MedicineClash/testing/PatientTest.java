@@ -18,7 +18,7 @@ public class PatientTest {
 	
 	@Before
 	public void setUp(){
-		prescription = new Prescription(new Date(2017-01-13), 4);
+		prescription = new Prescription(new Date(2017-01-17), 4);
 		prescription2 = new Prescription(new Date(2017-01-17), 4);
 		medicine = new Medicine("Paracetamol");
 		medicine2 = new Medicine("Ibuprofeno");
@@ -33,6 +33,7 @@ public class PatientTest {
 	public void comprobarPacieteTest() {
 		assertTrue(uglyPatient.getMedicines().contains(medicine));
 		assertFalse(uglyPatient.getMedicines().contains(medicine3));
+		System.out.println(prescription.finishDate());
 	}
 
 }
