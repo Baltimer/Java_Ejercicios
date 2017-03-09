@@ -1,7 +1,7 @@
 package org.foobarspam.FigurasGeometricas.figura;
 
 //Constructores de las figuras geometricas
-public class Rectangulo extends FiguraGeometrica{
+public class Rectangulo extends FiguraGeometrica implements Drawable{
 	//Inicializamos las variables para calcular el area
 	private double altura = 0d;
 	private double anchura = 0d;
@@ -46,5 +46,13 @@ public class Rectangulo extends FiguraGeometrica{
 	public double area(){
 		double area = getAltura() * getAnchura();
 		return area;
+	}
+	// Implementamos el método draw() de la interfaz Drawable
+	public void draw(){
+		System.out.println(getNombre() + ", que es un Rectangulo, ha sido dibujado");
+	}
+	
+	public void aplicarTema(){
+		System.out.println(getNombre() + " ha aplicado un tema reshulo");
 	}
 }

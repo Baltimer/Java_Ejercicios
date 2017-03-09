@@ -1,6 +1,6 @@
 package org.foobarspam.FigurasGeometricas.figura;
 
-public class Circulo extends FiguraGeometrica {
+public class Circulo extends FiguraGeometrica implements Drawable {
 	//Inicializamos las variables para calcular el area
 	private double PI = 3.141592;
 	private double radio = 0d;
@@ -33,4 +33,14 @@ public class Circulo extends FiguraGeometrica {
 		double area = PI * this.radio * this.radio;
 		return area;
 	}
+	
+	// Implementamos el método draw() de la interfaz Drawable
+	public void draw(){
+		System.out.println(getNombre() + ", que es un Circulo, ha sido dibujado");
+	}
+	
+	public void aplicarTema(){
+		System.out.println(getNombre() + " ha aplicado un tema reshulo");
+	}
+	
 }

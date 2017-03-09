@@ -1,6 +1,6 @@
 package org.foobarspam.FigurasGeometricas.figura;
 
-public class Elipse extends FiguraGeometrica{
+public class Elipse extends FiguraGeometrica implements Drawable{
 	// Inicializamos los valores para el area de la elipse
 	private double PI = 3.141592;
 	private double semiejeMayor = 0d;
@@ -40,5 +40,9 @@ public class Elipse extends FiguraGeometrica{
 	public double area(){
 		double area = PI * this.semiejeMayor * this.semiejeMenor;
 		return area;
+	}
+	// Implementamos el método draw() de la interfaz Drawable
+	public void draw(){
+		System.out.println(getNombre() + ", que es un Elipse, ha sido dibujada");
 	}
 }

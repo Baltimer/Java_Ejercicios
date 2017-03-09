@@ -1,7 +1,7 @@
 package org.foobarspam.FigurasGeometricas.figura;
 
 // Clase abstracta de la que heredaran las figuras geometricas
-abstract class FiguraGeometrica {
+public abstract class FiguraGeometrica {
 	// Propiedades abstractas
 	protected String nombre;
 	
