@@ -10,7 +10,7 @@ public class GeneradorAutomaticoTest {
 			String numeroDNI = GenerarNumeroID.generarDNIValido();
 			Dni dni = new Dni(numeroDNI);
 			if (dni.tieneFormatoValido()) {
-				System.out.println(i+1 + ": " + dni.getNumeroId() + "\tPASS");
+				System.out.println(i+1 + ":\t" + dni.getNumeroId() + "\tPASS");
 			}
 		}
 		
@@ -19,7 +19,7 @@ public class GeneradorAutomaticoTest {
 			String numeroDNI = GenerarNumeroID.generarDNINoValido();
 			Dni dni = new Dni(numeroDNI);
 			if (!dni.tieneFormatoValido()) {
-				System.out.println(i+1 + ": " + dni.getNumeroId() + "\tPASS");
+				System.out.println(i+1 + ":\t" + dni.getNumeroId() + "\tPASS");
 			}
 		}
 		
@@ -28,7 +28,7 @@ public class GeneradorAutomaticoTest {
 			String numeroNie = GenerarNumeroID.generarNIEValido();
 			Nie nie = new Nie(numeroNie);
 			if (nie.tieneFormatoValido()) {
-				System.out.println(i+1 + ": " + nie.getNumeroId() + "\tPASS");
+				System.out.println(i+1 + ":\t" + nie.getNumeroId() + "\tPASS");
 			}
 		}
 		
@@ -37,7 +37,7 @@ public class GeneradorAutomaticoTest {
 			String numeroNie = GenerarNumeroID.generarNIENoValido();
 			Nie nie = new Nie(numeroNie);
 			if (!nie.tieneFormatoValido()) {
-				System.out.println(i+1 + ": " + nie.getNumeroId() + "\tPASS");
+				System.out.println(i+1 + ":\t" + nie.getNumeroId() + "\tPASS");
 			}
 		}
 	}
