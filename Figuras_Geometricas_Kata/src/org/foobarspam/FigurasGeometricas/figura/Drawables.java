@@ -16,6 +16,9 @@ public class Drawables {
 				figura.aplicarTema();
 			} catch (UnsupportedOperationException exception){
 				System.out.println(exception);
+				// Si se quiere añadir el nombre de la figura habría que acceder
+				// a la vista FigurasGeometricas que es donde está implementado
+				// el método getNombre()
 			}
 		}
 	}
