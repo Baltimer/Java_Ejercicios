@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<emt:carrera xmlns:emt="https://api.mobipalma.mobi/docs/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://api.mobipalma.mobi/docs/ CotxoxSchema.xsd">
+	<tarjetaCredito>123445678VISA</tarjetaCredito>
+	<origen>Palma</origen>
+	<destino>Manacor</destino>
+	<distancia>30.0</distancia>
+	<tiempoEsperadoMinutos>25</tiempoEsperadoMinutos>
+	<tiempoCarrera>28</tiempoCarrera>
+	<costeEsperado>23.0</costeEsperado>
+	<costeTotal>24.0</costeTotal>
+	<propina>1</propina>
+	<conductor>
+		<nombre>Samantha</nombre>
+		<matricula>1234ETR</matricula>
+		<modelo>Seat Ibisa</modelo>
+		<valoraciones>5 4</valoraciones>
+		<ocupado>true</ocupado>
+		<valoracionMedia>4.5</valoracionMedia>
+	</conductor>
+</emt:carrera>
