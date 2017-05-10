@@ -64,5 +64,9 @@ public class Regulator implements Regulate{
 	public void setMaxTemp(double maxTemp){
 		this.maxTemp = maxTemp;
 	}
+	
+	public Heater getHeater(){
+		return this.h;
+	}
 
 }

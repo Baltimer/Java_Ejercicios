@@ -24,7 +24,7 @@ public class RegulatorModule extends AbstractModule {
 		bind(Thermometer.class).to(RemoteCommandSensor.class);
 	}
 	
-	@Provides
+	@Provides @Singleton
 	RoomTemperature provideRoomTemperature(){
 		RoomTemperature roomTemperature = new RoomTemperature();
 		roomTemperature.setTemperature(15);

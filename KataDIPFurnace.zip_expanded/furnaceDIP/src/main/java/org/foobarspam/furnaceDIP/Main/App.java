@@ -20,15 +20,15 @@ public class App
 {
     public static void main( String[] args )
     {
-//    	final double minTemp = 15.0;
-//        final double maxTemp = 21.0;
+    	final double minTemp = 15.0;
+        final double maxTemp = 21.0;
         
         Injector injector = Guice.createInjector(new RegulatorModule());
         
         Regulator regulator = injector.getInstance(Regulator.class);
         
-        regulator.setMinTemp(15);
-        regulator.setMaxTemp(21);
+        regulator.setMinTemp(minTemp);
+        regulator.setMaxTemp(maxTemp);
 //        RoomTemperature temperature = new RoomTemperature(15);
 //        Heater heater = new GasHeater();
 //        Thermometer thermometer = new RemoteCommandSensor();
@@ -38,9 +38,13 @@ public class App
         System.out.println( "Arrancando..." );
         regulator.regulate();
         
+        // Creamos un Jedi yoda para ver si realmente sigue el comportamiento esperado
         Jedi yoda = new Jedi();
         System.out.println( "\nArrancando a Yoda: " );
         regulator.regulate();
         yoda.speak();
+        
+        // Casteamos la vista de Jedi para poder usar el método speak()
+        ((Jedi) regulator.getHeater()).speak();
     }
 }

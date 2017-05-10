@@ -4,7 +4,9 @@ import org.foobarspam.furnaceDIP.hardware.GasHeater;
 import org.foobarspam.furnaceDIP.interfaces.Heater;
 import org.foobarspam.furnaceDIP.types.RoomTemperature;
 
+import com.google.inject.Singleton;
 
+@Singleton
 public class Jedi implements Heater {
 	
 	public void engage(RoomTemperature temperature){
